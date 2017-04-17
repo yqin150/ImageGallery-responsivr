@@ -1,0 +1,40 @@
+body {
+  box-sizing: border-box;
+}
+h2 {
+  color: $title_color;
+  font: 100 18px $font_stack;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0;
+}
+.responsive {
+  width:24.99999%;
+  float:left;
+}
+div.gallery {
+  border:1px solid $border-color;
+}
+div.gallery:hover {
+  border:1px solid $border-hover;
+}
+div.gallery img {
+  width:100%;
+  height:auto;
+}
+div.gallery .desc {
+  text-align: center;
+  padding: 15px 15px;
+}
+@media(max-width:$breakpoint-tablet){
+  .responsive {
+    width:49.99999%;
+    margin:6px 0;
+  }
+}
+@media(max-width:$breakponit-mobile){
+  .responsive {
+    width:100%;
+  }
+}
